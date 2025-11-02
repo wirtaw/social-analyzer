@@ -60,16 +60,16 @@ const header_options = {
 
 
 import https from 'follow-redirects'
-import fs from 'fs'
-import url from 'url'
+import fs from 'node:fs'
+import url, {fileURLToPath} from 'node:url'
 import {franc} from 'franc'
 import langs from 'langs'
 import * as cheerio from 'cheerio'
-import path from 'path'
+import path from 'node:path'
 import slash from 'slash'
 import colors from 'colors/safe.js'
 import {QBIxora} from 'ixora'
-import {fileURLToPath} from 'url';
+
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const sites_json_path = slash(path.join(__dirname, '..', 'data', 'sites.json'))
