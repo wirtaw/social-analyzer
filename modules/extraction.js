@@ -1,6 +1,5 @@
 import helper from './helper.js'
-import cheerio from 'cheerio'
-
+import * as cheerio from 'cheerio'
 
 const strings_meta = new RegExp('regionsAllowed|width|height|color|rgba\\(|charset|viewport|refresh|equiv', 'i')
 async function extract_metadata (site, source) {
